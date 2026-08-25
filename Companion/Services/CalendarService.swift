@@ -87,10 +87,10 @@ class CalendarService {
             }
         }
         
-        // Date range: today -6 days to today +30 days
+        // Date range: today -6 days to today +40 days
         guard !calendarsToUse.isEmpty,
               let startDate = Calendar.current.date(byAdding: .day, value: -6, to: Date()),
-              let endDate = Calendar.current.date(byAdding: .day, value: 30, to: Date())
+              let endDate = Calendar.current.date(byAdding: .day, value: 40, to: Date())
         else {
             return []
         }
